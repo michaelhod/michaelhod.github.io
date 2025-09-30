@@ -70,7 +70,7 @@ const MusicCarousel = () => {
         
         <div className="carousel-container relative">
           {/* Scroll Indicator HIDDEN FOR NOW WHILE NOT ENOUGH ELEMENTS*/}
-          <div className="hidden absolute top-8 right-8 z-20">
+          <div className="hidden absolute top-8 left-1/2 transform -translate-x-1/2 z-20">
             <p className="text-md font-light shimmer">Scroll across →</p>
           </div>
           <div ref={scrollRef} className="carousel-scroll pb-4 pt-2 px-[24px]">

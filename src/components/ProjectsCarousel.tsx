@@ -131,7 +131,7 @@ const ProjectsCarousel = () => {
         
         <div className="carousel-container relative">
           {/* Scroll Indicator */}
-          <div className="absolute top-8 right-8 z-20">
+          <div className="absolute top-8 left-1/2 transform -translate-x-1/2 z-20">
             <p className="text-md font-light shimmer">Scroll across →</p>
           </div>
           <div ref={scrollRef} className="carousel-scroll pb-4 pt-16 px-[24px]">

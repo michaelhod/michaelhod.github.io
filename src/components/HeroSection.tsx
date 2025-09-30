@@ -45,14 +45,14 @@ const HeroSection = () => {
       />
       
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-background/45 via-background/15 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-r from-background/45 via-background/5 to-transparent" />
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 text-center">
         <div className="inline-block px-8 py-4 bg-background/0 rounded-lg transition-opacity duration-300"
         style={{ opacity: nameOpacity, textShadow: "2px 2px 4px rgba(0,0,0,0.3)" }}>
           <h1 
-            className="hero-text font-semibold text-4xl sm:text-7xl md:text-7xl lg:text-8xl text-orange-400 text-foreground font-gilda" >
+            className="hero-text font-semibold text-4xl sm:text-7xl md:text-7xl lg:text-8xl text-orange-100 text-foreground font-gilda" >
             Michael Hodgins
           </h1>
         </div>
@@ -60,12 +60,12 @@ const HeroSection = () => {
       
       {/* Scroll Indicator */}
       <a href="#about" 
-        className="absolute bottom-8 transform -translate-x-1/2 z-10 animate-bounce text-center"
+        className="absolute bottom-8 transform z-10 text-center"
         style={{ opacity: nameOpacity }}
       >
-        <ChevronUp className="w-8 h-8 text-orange-400 mx-auto" />
+        <ChevronUp className="w-8 h-8 text-orange-100 mx-auto animate-bounce" />
         <div className="px-2 py-1 bg-black/20 backdrop-blur-md rounded-lg">
-          <p className="text-orange-400 text-md font-semibold">Scroll up</p>
+          <p className="text-orange-100 text-md font-semibold">Scroll up</p>
         </div>
       </a>
     </section>
