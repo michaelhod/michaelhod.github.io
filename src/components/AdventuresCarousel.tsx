@@ -166,8 +166,8 @@ const AdventuresCarousel = () => {
         <DialogContent className="max-w-6xl max-h-[95vh] overflow-y-auto w-full md:w-[calc(100vw-3rem)] md:left-1/2 md:-translate-x-1/2">
           {selectedAdventure && <>
               <DialogHeader className="pb-6">
-                <DialogTitle className="text-3xl font-light">{selectedAdventure.name}</DialogTitle>
-                <div className="flex items-center gap-4 text-muted-foreground">
+                <DialogTitle className="text-3xl text-left font-light">{selectedAdventure.name}</DialogTitle>
+                <div className="flex items-center text-left gap-4 text-muted-foreground">
                   <span>{selectedAdventure.location}</span>
                   <span>•</span>
                   <span>{selectedAdventure.year}</span>

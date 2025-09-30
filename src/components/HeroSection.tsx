@@ -37,7 +37,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section data-section="hero" className="sticky top-0 h-screen flex items-center justify-center overflow-hidden z-0">
+    <section data-section="hero" className="sticky top-0 h-[95vh] sm:h-screen flex items-center justify-center overflow-hidden z-0">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-top bg-no-repeat"
@@ -48,8 +48,8 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-gradient-to-r from-background/45 via-background/5 to-transparent" />
       
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-6 text-center">
-        <div className="inline-block px-8 py-4 bg-background/0 rounded-lg transition-opacity duration-300"
+      <div className="relative z-10 container mx-auto px-0 md:px-6 text-center">
+        <div className="inline-block px-0 md:px-8 py-4 bg-background/0 rounded-lg transition-opacity duration-300"
         style={{ opacity: nameOpacity, textShadow: "2px 2px 4px rgba(0,0,0,0.3)" }}>
           <h1 
             className="hero-text font-semibold text-4xl sm:text-7xl md:text-7xl lg:text-8xl text-orange-100 text-foreground font-gilda" >
