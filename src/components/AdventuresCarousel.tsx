@@ -134,14 +134,27 @@ const AdventuresCarousel = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-hero-overlay/70 to-transparent" />
                   <div className="absolute bottom-2 left-4 right-4 text-white transition-transform duration-300 group-hover:-translate-y-2">
                     <h3 className="text-2xl font-normal text-white mb-1 transition-colors duration-300 group-hover:text-orange-500">{adventure.name}</h3>
-                    <p className="text-base opacity-90 font-light">{adventure.description}</p>
-                    <p className="text-sm opacity-75 mt-1">{adventure.location} • {adventure.year}</p>
-                    <div className="flex items-center gap-2 text-sm text-orange-500 opacity-0 translate-y-2 group-hover:translate-y-1 group-hover:opacity-100 transition-all duration-300">
-                      <span>See More</span>
-                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                      </svg>
+                    <p className="text-base opacity-95 font-light">{adventure.description}</p>
+                    <p className="text-sm opacity-85 mt-1">{adventure.location} • {adventure.year}</p>
+                    <div className="opacity-0 translate-y-2 group-hover:translate-y-1 group-hover:opacity-100 transition-all duration-300">
+                      <div className="inline-flex items-center gap-1 px-2 py-1 rounded-md bg-orange-500/50 text-sm text-white">
+                        <span>See More</span>
+                        <svg 
+                          className="w-4 h-4" 
+                          fill="none" 
+                          stroke="currentColor" 
+                          viewBox="0 0 24 24"
+                        >
+                          <path 
+                            strokeLinecap="round" 
+                            strokeLinejoin="round" 
+                            strokeWidth={2} 
+                            d="M9 5l7 7-7 7" 
+                          />
+                        </svg>
+                      </div>
                     </div>
+
                   </div>
                 </div>
               </div>)}
