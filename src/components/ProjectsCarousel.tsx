@@ -33,9 +33,9 @@ const ProjectsCarousel = () => {
     title: "Flagging Acute Kidney Injury (AKI)",
     date: "April 2025",
     oneLiner: "Creating, integrating and maintaining an ML system to integrate into the NHS emergency room.",
-    description: "The NHS detects AKI cases using a flow chart. This method correctly detects 73% of cases. To reduce the strain on the ER and increase accuracy, our team built an end-to-end machine learning software system. It was built to be plugged straight into an NHS hospital: including listening to live HL7 messages, AKI detection, and notifying positives to the hospital's paging system. It integrated with grafana to provide real-time insights through interactive dashboards. We cut down diagnosis times from minutes to under a second, and improved on the NHS’ 73% accuracy baseline to 95%.",
+    description: "Our team built an end-to-end machine learning software system to reduce the strain on the ER and increase diagnosis accuracy. It was built to be plugged straight into an NHS hospital: including listening to live HL7 messages, AKI detection, and notifying positives to the hospital's paging system. It integrated with grafana to provide real-time insights through interactive dashboards. We cut down diagnosis times from minutes to under a second, and improved on the NHS’ 73% accuracy baseline to 95%.",
     technologies: ["Docker", "Kubernetes", "Decision Trees", "Neural Networks", "Grafana", "Python", "Git"],
-    challenges: "Acute kidney injury (AKI) is associated with 100,000 deaths in emergency room patients a year. 30% of these deaths could be prevented with the right care and treatment.",
+    challenges: "Acute kidney injury (AKI) is associated with 100,000 deaths in emergency room patients a year. 30% of these deaths could be prevented with the right care and treatment. The NHS detects AKI cases manually using a flow chart which correctly detects 73% of cases.",
     github: "https://github.com/michaelhod/NHSAKI",
   }, {
     id: 3,
@@ -43,26 +43,22 @@ const ProjectsCarousel = () => {
     affiliate: e2vIcon,
     title: "eco2Veritas",
     date: "2023-2024",
-    oneLiner: "Helped develop the e2v platform; a blazor application.",
-    description: "Built a comprehensive MLOps platform for automated model training, testing, and deployment. Features include experiment tracking, model versioning, automated testing pipelines, and real-time monitoring dashboards.",
+    oneLiner: "A platform providing monitoring, certification, compliance, and traceability across material flows.",
+    description: "I joined Greenback to help build the eco2Veritas platform; a Blazor application hosted on Azure. I led the development of automated UI testing using xUnit, Selenium, and Gherkin-based BDD tests, integrating them into Azure DevOps pipelines to enhance reliability and streamline debugging. I also supervised a project to build a client-facing data visualization solution, evaluating tools such as PowerBI and Grafana before implementing Grafana dashboards and supporting APIs into the platform. Working in a start-up environment allowed me to take initiative across projects, strengthening my skills in agile development, cloud services, and stakeholder-focused solutions.",
     technologies: ["Azure", "Selenium", "xUnit", "Gherkin", "C#", "JS", "Grafana", "HTML/CSS"],
-    challenges: "Managing complex model dependencies and ensuring consistent deployment across environments.",
-    solution: "Implemented containerized workflows and comprehensive testing suites for reliable deployments.",
-    github: "#",
-    demo: "#"
+    challenges: "Organizations want to demonstrate genuine environmental responsibility to meet growing regulatory and consumer demands. eco₂Veritas helps organisations substantiate their sustainability claims with transparent, verifiable data.",
+    demo: "https://www.eco2veritas.com/"
   }, {
     id: 4,
     icon: Bot,
     affiliate: imperialIcon,
-    title: "MLOps & Deployment Platform",
-    date: "September 2023",
-    oneLiner: "Production-ready machine learning systems with automated monitoring",
-    description: "Built a comprehensive MLOps platform for automated model training, testing, and deployment. Features include experiment tracking, model versioning, automated testing pipelines, and real-time monitoring dashboards.",
-    technologies: ["Docker", "Kubernetes", "MLflow", "Jenkins", "Prometheus"],
-    challenges: "Managing complex model dependencies and ensuring consistent deployment across environments.",
-    solution: "Implemented containerized workflows and comprehensive testing suites for reliable deployments.",
-    github: "#",
-    demo: "#"
+    title: "Robot Learning",
+    date: "March 2025",
+    oneLiner: "Built a \"robot brain\" to teach itself the quickest path through varied rough terrain.",
+    description: "Developed a behavioral cloning approach using demonstrations to train four independent neural networks for action prediction. Designed an uncertainty detection system by comparing model outputs, triggering new demonstrations to improve accuracy. Enhanced reliability by incorporating high-reward actions into training and correcting cases where the robot stalled despite high confidence. Optimized performance through systematic resets and robust handling of edge cases, ensuring consistent goal completion.",
+    technologies: ["Reinforcment Learning", "Imitation Learning", "Neural Networks", "PyTorch", "Python"],
+    challenges: "A fun project to help a robot learn its surrounding and navigate quickly through a terrain varying in resistance to a finish line.",
+    github: "https://github.com/michaelhod/Robot-Path-Learning"
   }, {
     id: 5,
     icon: Brain,
@@ -73,7 +69,7 @@ const ProjectsCarousel = () => {
     description: "Since access to a high quality MRI machine is restricted for some, our team trained a generative GNN developing a graph super-resolution model to upscale low-resolution brain graphs into higher-resolution ones while preserving structural and functional properties. We implemented a modified version of Pragya Singh and Islem Rekik's STP-GSR model, adding intermediate steps in edge initialization and residual connections, providing stability and better generalization. Several innovations were tested, such as attention mechanisms and GANs, though not all improved results. The model demonstrated strong performance across most evaluation metrics, outperforming STP-GSR, though at higher computational cost.",
     technologies: ["Scikit-learn", "Graph Super-Resolution", "Generative GNNs", "PyTorch", "Python", "Git"],
     challenges: "MRI scans can vary in quality, depending on MRI machine. High resolution images of brain scans can only be taken with expensive and rare MRI machines.",
-    github: "#",
+    github: "https://github.com/michaelhod/Generative-GNN-Brain-Graphs",
     demo: "https://arxiv.org/abs/2411.02525"
   }, {
     id: 6,
