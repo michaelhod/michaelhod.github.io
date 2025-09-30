@@ -56,7 +56,7 @@ const ProjectsCarousel = () => {
     date: "March 2025",
     oneLiner: "Built a \"robot brain\" to teach itself the quickest path through varied rough terrain.",
     description: "Developed a behavioral cloning approach using demonstrations to train four independent neural networks for action prediction. Designed an uncertainty detection system by comparing model outputs, triggering new demonstrations to improve accuracy. Enhanced reliability by incorporating high-reward actions into training and correcting cases where the robot stalled despite high confidence. Optimized performance through systematic resets and robust handling of edge cases, ensuring consistent goal completion.",
-    technologies: ["Reinforcment Learning", "Imitation Learning", "Neural Networks", "PyTorch", "Python"],
+    technologies: ["RL", "Imitation Learning", "Neural Networks", "PyTorch", "Python"],
     challenges: "A fun project to help a robot learn its surrounding and navigate quickly through a terrain varying in resistance to a finish line.",
     github: "https://github.com/michaelhod/Robot-Path-Learning"
   }, {
