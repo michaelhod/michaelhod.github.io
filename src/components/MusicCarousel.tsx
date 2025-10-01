@@ -66,7 +66,7 @@ const MusicCarousel = () => {
   return <section data-section="music" className="relative py-20">
       {/* Background layer */}
       <div
-        className="absolute -z-10 inset-0 w-full bg-center bg-cover bg-fixed"
+        className="absolute top-0 left-0 w-screen h-[100svh] bg-center bg-cover bg-fixed -z-10"
         style={{ backgroundImage: `url(${bgImage})` }}
       ></div>
         
