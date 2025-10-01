@@ -16,14 +16,14 @@ const MusicCarousel = () => {
     description: "Producer. Lead the recording session, and mixed and mastered it.",
     duration: "Contessa",
     spotifyUrl: "https://open.spotify.com/track/5Qf5Gqj2YNUhw9rjNwzPxC?si=eab1754f9d2d4d5b",
-//  }, {
-//     id: 2,
-//     title: "Next Flight",
-//     affiliate: mcgillIcon,
-//     date: "March 2023",
-//     description: "Producer. Lead the recording session, and mixed and mastered it.",
-//     duration: "Nick Semenykhin, Benjamin Boardman, Olivier Mallette",
-//     spotifyUrl: "https://soundcloud.com/michael-164492989/next-flight",
+ }, {
+    id: 2,
+    title: "Next Flight",
+    affiliate: mcgillIcon,
+    date: "March 2023",
+    description: "Producer. Lead the recording session, and mixed and mastered it.",
+    duration: "Nick Semenykhin",
+    spotifyUrl: "https://soundcloud.com/michael-164492989/next-flight",
   }, {
     id: 3,
     title: "Have You Met Mrs Jones",
