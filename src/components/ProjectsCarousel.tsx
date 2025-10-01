@@ -71,17 +71,17 @@ const ProjectsCarousel = () => {
     challenges: "MRI scans can vary in quality, depending on MRI machine. High resolution images of brain scans can only be taken with expensive and rare MRI machines.",
     github: "https://github.com/michaelhod/Generative-GNN-Brain-Graphs",
     demo: "https://arxiv.org/abs/2411.02525"
-  }, {
-    id: 6,
-    icon: Globe,
-    title: "This webstie!",
-    date: "September 2025",
-    oneLiner: "A personal hub to collect some of the things I have done in one place.",
-    description: "Designed and built this website from scratch. Prototyped a rough version using AI tooling (Lovable), then refined and polished it into a clean and responsive final product within a few days.",
-    technologies: ["React", "Lovable", "Tailwind CSS"],
-    challenges: "I wanted a dedicated space to share my creations in one place, rather than scattering them across different platforms.",
-    github: "#",
-    demo: "#"
+  // }, {
+  //   id: 6,
+  //   icon: Globe,
+  //   title: "This webstie!",
+  //   date: "September 2025",
+  //   oneLiner: "A personal hub to collect some of the things I have done in one place.",
+  //   description: "Designed and built this website from scratch. Prototyped a rough version using AI tooling (Lovable), then refined and polished it into a clean and responsive final product within a few days.",
+  //   technologies: ["React", "Lovable", "Tailwind CSS"],
+  //   challenges: "I wanted a dedicated space to share my creations in one place, rather than scattering them across different platforms.",
+  //   github: "#",
+  //   demo: "#"
   }];
   useEffect(() => {
     const handleScroll = () => {
