@@ -14,15 +14,17 @@ const MusicCarousel = () => {
     affiliate: mcgillIcon,
     date: "April 2023",
     description: "Producer. Lead the recording session, and mixed and mastered it.",
-    duration: "Contessa",
-    spotifyUrl: "https://open.spotify.com/track/5Qf5Gqj2YNUhw9rjNwzPxC?si=eab1754f9d2d4d5b",
+    artist: "Contessa",
+    artistlink: "https://open.spotify.com/artist/6Y1Dxk0EEXia9QWKqq2gKs",
+    spotifyUrl: "https://open.spotify.com/track/5Qf5Gqj2YNUhw9rjNwzPxC",
  }, {
     id: 2,
     title: "Next Flight",
     affiliate: mcgillIcon,
     date: "March 2023",
     description: "Producer. Lead the recording session, and mixed and mastered it.",
-    duration: "Nick Semenykhin",
+    artist: "Nick Semenykhin",
+    artistlink: "https://open.spotify.com/album/4wZY71cxVzzawt5tVu3bFC",
     spotifyUrl: "https://soundcloud.com/michael-164492989/next-flight",
   }, {
     id: 3,
@@ -30,7 +32,7 @@ const MusicCarousel = () => {
     affiliate: mcgillIcon,
     date: "Janurary 2023",
     description: "Recording Engineer. Part of the recording session, and mixed and mastered it.",
-    duration: "Matt's Trio",
+    artist: "Matt's Trio",
     spotifyUrl: "https://soundcloud.com/michael-164492989/have-you-met-mrs-jones",
   }];
   useEffect(() => {
@@ -117,7 +119,15 @@ const MusicCarousel = () => {
                           <Calendar className="w-4 h-4 mr-2" />
                           {track.date}
                         </div>
-                        <span className="text-xs">{track.duration}</span>
+                        <span className="text-xs">
+                          {track.artistlink ? (
+                            <a href={track.artistlink} target="_blank" rel="noopener noreferrer" className="text-xs text-current no-underline px-1.5 py-0.5 border border-black/40 rounded shadow-md hover:bg-orange-50 transition">
+                              {track.artist}
+                            </a>
+                          ) : (
+                            <span className="px-1.5 py-0.5 border border-transparent rounded">{track.artist}</span>
+                          )}
+                        </span>
                       </div>
                     </CardContent>
                   </a>
