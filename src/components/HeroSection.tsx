@@ -37,7 +37,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section data-section="hero" className="sticky top-0 h-[95vh] sm:h-screen flex items-center justify-center overflow-hidden z-0">
+    <section data-section="hero" className="sticky top-0 h-[100svh] sm:h-screen flex items-center justify-center overflow-hidden z-0">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-top bg-no-repeat"

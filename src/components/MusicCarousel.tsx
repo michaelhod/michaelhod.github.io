@@ -13,16 +13,25 @@ const MusicCarousel = () => {
     title: "Late Night Summer",
     affiliate: mcgillIcon,
     date: "April 2023",
-    description: "Lead the recording session, and mixed and mastered this track",
+    description: "Producer. Lead the recording session, and mixed and mastered it.",
     duration: "Contessa",
     spotifyUrl: "https://open.spotify.com/track/5Qf5Gqj2YNUhw9rjNwzPxC?si=eab1754f9d2d4d5b",
 //  }, {
-//    id: 2,
-//    title: "Digital Horizons",
-//    date: "January 2024",
-//    description: "Upbeat synthwave track with retro-futuristic vibes and driving basslines",
-//    duration: "3:45",
-//    spotifyUrl: "https://open.spotify.com/track/example2",
+//     id: 2,
+//     title: "Next Flight",
+//     affiliate: mcgillIcon,
+//     date: "March 2023",
+//     description: "Producer. Lead the recording session, and mixed and mastered it.",
+//     duration: "Nick Semenykhin, Benjamin Boardman, Olivier Mallette",
+//     spotifyUrl: "https://soundcloud.com/michael-164492989/next-flight",
+  }, {
+    id: 3,
+    title: "Have You Met Mrs Jones",
+    affiliate: mcgillIcon,
+    date: "Janurary 2023",
+    description: "Recording Engineer. Part of the recording session, and mixed and mastered it.",
+    duration: "Matt's Trio",
+    spotifyUrl: "https://soundcloud.com/michael-164492989/have-you-met-mrs-jones",
   }];
   useEffect(() => {
     const handleScroll = () => {
@@ -59,7 +68,7 @@ const MusicCarousel = () => {
       <div className="absolute inset-0 bg-gradient-to-r from-orange-500/65 via-orange-500/10 to-transparent" />
 
       <div className="relative z-10 w-full">
-        <div className="text-center mb-16">
+        <div className="text-center px-8 mb-16">
           <div className="inline-block px-8 py-4 bg-card/85 backdrop-blur-sm rounded-lg mb-4">
             <h2 className="section-title mb-4">Music</h2>
             <p className="text-lg text-muted-foreground font-light max-w-2xl mx-auto px-[2px]">

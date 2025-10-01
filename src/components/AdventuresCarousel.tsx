@@ -20,7 +20,7 @@ const AdventuresCarousel = () => {
     location: "Taipei • Hsinchu • Hualien • Taitung • Taroko • Tainan",
     year: "2024",
     image: taiwanCover,
-    videoUrl: "https://www.youtube.com/embed/wg_VC9qqzxc?controls=0",
+    videoUrl: "https://www.youtube.com/embed/wg_VC9qqzxc?controls=1",
     images: taiwanImages
   }, {
     id: 2,
@@ -29,7 +29,7 @@ const AdventuresCarousel = () => {
     location: "Mediterranean Sea, Turkiye",
     year: "2023",
     image: turkiye8Cover,
-    videoUrl: "https://youtube.com/embed/7BSKO2uSsgE?controls=0",
+    videoUrl: "https://youtube.com/embed/7BSKO2uSsgE?controls=1",
     images: turkiye8Images
   }, {
     id: 3,
@@ -38,7 +38,7 @@ const AdventuresCarousel = () => {
     location: "Swiss Alps, Switzerland",
     year: "2023",
     image: switzerlandCover,
-    videoUrl: "https://youtube.com/embed/tiffsB6QSao?controls=0",
+    videoUrl: "https://youtube.com/embed/tiffsB6QSao?controls=1",
     images: switzerlandImages
   }, {
     id: 4,
@@ -47,7 +47,7 @@ const AdventuresCarousel = () => {
     location: "Ναύπλιο, Greece",
     year: "2023",
     image: greeceCover,
-    videoUrl: "https://youtube.com/embed/6vAJ7Igp6GI?controls=0",
+    videoUrl: "https://youtube.com/embed/6vAJ7Igp6GI?controls=1",
     images: greeceImages
   }, {
     id: 5,
@@ -56,7 +56,7 @@ const AdventuresCarousel = () => {
     location: "Mediterranean Sea, Turkiye",
     year: "2023",
     image: turkiye7Cover,
-    videoUrl: "https://youtube.com/embed/Rb0Y-k4RuXg?controls=0",
+    videoUrl: "https://youtube.com/embed/Rb0Y-k4RuXg?controls=1",
     images: turkiye7Images
   }];
   useEffect(() => {
