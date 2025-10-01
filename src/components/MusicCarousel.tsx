@@ -63,8 +63,12 @@ const MusicCarousel = () => {
       });
     }
   };
-  return <section data-section="music" className="relative py-20 bg-background bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url(${bgImage})` }}>
+  return <section data-section="music" className="relative py-20">
+      {/* Background layer */}
+      <div
+        className="absolute -z-10 inset-0 w-full bg-center bg-cover bg-fixed"
+        style={{ backgroundImage: `url(${bgImage})` }}
+      ></div>
         
       {/* Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-orange-500/65 via-orange-500/10 to-transparent" />
