@@ -76,7 +76,7 @@ const ProjectsCarousel = () => {
     icon: Globe,
     title: "This webstie!",
     date: "September 2025",
-    oneLiner: "A personal hub to collect everything in one place.",
+    oneLiner: "A personal hub to collect some of the things I have done in one place.",
     description: "Designed and built this website from scratch. Prototyped a rough version using AI tooling (Lovable), then refined and polished it into a clean and responsive final product within a few days.",
     technologies: ["React", "Lovable", "Tailwind CSS"],
     challenges: "I wanted a dedicated space to share my creations in one place, rather than scattering them across different platforms.",
