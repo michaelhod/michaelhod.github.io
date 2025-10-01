@@ -44,7 +44,7 @@ const ProjectsCarousel = () => {
     title: "eco2Veritas",
     date: "2023-2024",
     oneLiner: "A platform providing monitoring, certification, compliance, and traceability across material flows.",
-    description: "I joined Greenback to help build the eco2Veritas platform; a Blazor application hosted on Azure. I led the development of automated UI testing using xUnit, Selenium, and Gherkin-based BDD tests, integrating them into Azure DevOps pipelines to enhance reliability and streamline debugging. I also supervised a project to build a client-facing data visualization solution, evaluating tools such as PowerBI and Grafana before implementing Grafana dashboards and supporting APIs into the platform. Working in a start-up environment allowed me to take initiative across projects, strengthening my skills in agile development, cloud services, and stakeholder-focused solutions.",
+    description: "Helped build the eco2Veritas platform; a Blazor application hosted on Azure. Led the development of automated UI testing using xUnit, Selenium, and Gherkin-based BDD tests, integrating them into Azure DevOps pipelines to enhance reliability and streamline debugging. Also supervised a project to build a client-facing data visualization solution, evaluating tools such as PowerBI and Grafana before implementing Grafana dashboards and supporting APIs into the platform. Working in a start-up environment allowed me to take initiative across projects, strengthening my skills in agile development, cloud services, and stakeholder-focused solutions.",
     technologies: ["Azure", "Selenium", "xUnit", "Gherkin", "C#", "JS", "Grafana", "HTML/CSS"],
     challenges: "Organizations want to demonstrate genuine environmental responsibility to meet growing regulatory and consumer demands. eco₂Veritas helps organisations substantiate their sustainability claims with transparent, verifiable data.",
     demo: "https://www.eco2veritas.com/"
@@ -66,7 +66,7 @@ const ProjectsCarousel = () => {
     title: "Brain Graph Super-Resolution",
     date: "April 2025",
     oneLiner: "Generated high-resolution (HR) brain graphs from low-resolution (LR) brain graphs using generative graph neural networks.",
-    description: "Since access to a high quality MRI machine is restricted for some, our team trained a generative GNN developing a graph super-resolution model to upscale low-resolution brain graphs into higher-resolution ones while preserving structural and functional properties. We implemented a modified version of Pragya Singh and Islem Rekik's STP-GSR model, adding intermediate steps in edge initialization and residual connections, providing stability and better generalization. Several innovations were tested, such as attention mechanisms and GANs, though not all improved results. The model demonstrated strong performance across most evaluation metrics, outperforming STP-GSR, though at higher computational cost.",
+    description: "Since access to a high quality MRI machine is restricted for some, our team trained a generative GNN developing a graph super-resolution model to upscale low-resolution brain graphs into higher-resolution ones. We implemented a modified version of Pragya Singh and Islem Rekik's STP-GSR model, adding intermediate steps in edge initialization and residual connections, providing stability and better generalization. The model demonstrated strong performance across most evaluation metrics, outperforming STP-GSR, though at higher computational cost.",
     technologies: ["Graph Super-Resolution", "Generative GNNs", "PyTorch", "Python", "Git"],
     challenges: "MRI scans can vary in quality, depending on MRI machine. High resolution images of brain scans can only be taken with expensive and rare MRI machines.",
     github: "https://github.com/michaelhod/Generative-GNN-Brain-Graphs",
@@ -76,10 +76,10 @@ const ProjectsCarousel = () => {
     icon: Globe,
     title: "This webstie!",
     date: "September 2025",
-    oneLiner: "A personal home to showcase some of the cool things I've done in life.",
-    description: "I designed and built this website from scratch. I first prototyped a rough version using AI tooling (Lovable), then refined and polished it into a clean and responsive final product within a few days.",
+    oneLiner: "A personal hub to collect everything in one place.",
+    description: "Designed and built this website from scratch. Prototyped a rough version using AI tooling (Lovable), then refined and polished it into a clean and responsive final product within a few days.",
     technologies: ["React", "Lovable", "Tailwind CSS"],
-    challenges: "I wanted a dedicated space to share my projects and experiments in one place, rather than scattering them across different platforms.",
+    challenges: "I wanted a dedicated space to share my creations in one place, rather than scattering them across different platforms.",
     github: "#",
     demo: "#"
   }];
