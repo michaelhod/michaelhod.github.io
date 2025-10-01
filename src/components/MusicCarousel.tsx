@@ -24,7 +24,7 @@ const MusicCarousel = () => {
     date: "March 2023",
     description: "Producer. Lead the recording session, and mixed and mastered it.",
     artist: "Nick Semenykhin",
-    artistlink: "https://open.spotify.com/album/4wZY71cxVzzawt5tVu3bFC",
+    artistlink: "https://open.spotify.com/artist/0ZxlwbcbJ4OTyqZh2F3KbL",
     spotifyUrl: "https://soundcloud.com/michael-164492989/next-flight",
   }, {
     id: 3,
