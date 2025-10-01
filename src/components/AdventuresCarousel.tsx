@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { Skeleton } from "@/components/ui/skeleton";
 import { taiwanImages, taiwanCover } from "@/assets/Taiwan";
 import { turkiye8Images, turkiye8Cover } from "@/assets/Sailing8";
 import { switzerlandImages, switzerlandCover } from "@/assets/Switzerland";
@@ -9,6 +10,7 @@ const AdventuresCarousel = () => {
   const [selectedAdventure, setSelectedAdventure] = useState<any>(null);
   const [activeIndex, setActiveIndex] = useState(0);
   const [expandedImageIndex, setExpandedImageIndex] = useState<number | null>(null);
+  const [loadedImages, setLoadedImages] = useState<Set<string>>(new Set());
   const scrollRef = useRef<HTMLDivElement>(null);
   const imageRefs = useRef<(HTMLDivElement | null)[]>([]);
   const adventures = [{
@@ -123,13 +125,17 @@ const AdventuresCarousel = () => {
           <div ref={scrollRef} className="carousel-scroll pb-4 pt-16 px-[24px]">
             {adventures.map(adventure => <div key={adventure.id} className="flex-shrink-0 w-[calc(100vw-48px)] max-w-[640px]">
                 <div className="group overflow-hidden rounded-lg card-elegant aspect-[4/3] relative cursor-pointer" onClick={() => setSelectedAdventure(adventure)}>
+                  {!loadedImages.has(`card-${adventure.id}`) && (
+                    <Skeleton className="absolute inset-0 w-full h-full" />
+                  )}
                   <img 
                     src={adventure.image} 
                     alt={adventure.description} 
                     width="640" 
                     height="480" 
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
-                    loading="lazy" 
+                    loading="lazy"
+                    onLoad={() => setLoadedImages(prev => new Set(prev).add(`card-${adventure.id}`))}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-hero-overlay/70 to-transparent" />
                   <div className="absolute bottom-2 left-4 right-4 text-white transition-transform duration-300 group-hover:-translate-y-2">
@@ -154,7 +160,6 @@ const AdventuresCarousel = () => {
                         </svg>
                       </div>
                     </div>
-
                   </div>
                 </div>
               </div>)}
@@ -195,17 +200,21 @@ const AdventuresCarousel = () => {
 
                   {/* Images Flex Container */}
                   <div className="flex flex-wrap justify-between gap-4">
-                    {selectedAdventure.images.slice(1).map((image: string, index: number) => <div key={index + 1} ref={el => imageRefs.current[index + 1] = el} className={`rounded-lg overflow-hidden transition-all duration-500 ease-in-out ${expandedImageIndex === index + 1 ? 'w-full aspect-video' : 'aspect-square'}`} style={{
+                    {selectedAdventure.images.slice(1).map((image: string, index: number) => <div key={index + 1} ref={el => imageRefs.current[index + 1] = el} className={`rounded-lg overflow-hidden transition-all duration-500 ease-in-out relative ${expandedImageIndex === index + 1 ? 'w-full aspect-video' : 'aspect-square'}`} style={{
                   flexBasis: expandedImageIndex === index + 1 ? '100%' : 'calc(33.333% - 1rem)',
                   minWidth: expandedImageIndex === index + 1 ? '100%' : 'calc(33.333% - 1rem)'
                 }}>
+                        {!loadedImages.has(`modal-${selectedAdventure.id}-${index + 1}`) && (
+                          <Skeleton className="absolute inset-0 w-full h-full" />
+                        )}
                         <img 
                           src={image} 
                           alt={`${selectedAdventure.name} - Image ${index + 2}`} 
                           width="400" 
                           height="400" 
                           className="w-full h-full object-cover cursor-pointer transition-all duration-200 hover:brightness-110" 
-                          loading="lazy" 
+                          loading="lazy"
+                          onLoad={() => setLoadedImages(prev => new Set(prev).add(`modal-${selectedAdventure.id}-${index + 1}`))}
                           onClick={() => setExpandedImageIndex(expandedImageIndex === index + 1 ? null : index + 1)} 
                         />
                       </div>)}

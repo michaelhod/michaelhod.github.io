@@ -34,7 +34,7 @@ const ProjectsCarousel = () => {
     date: "April 2025",
     oneLiner: "Creating, integrating and maintaining an ML system to integrate into the NHS emergency room.",
     description: "Our team built an end-to-end machine learning software system to reduce the strain on the ER and increase diagnosis accuracy. It was built to be plugged straight into an NHS hospital: including listening to live HL7 messages, AKI detection, and notifying positives to the hospital's paging system. It integrated with grafana to provide real-time insights through interactive dashboards. We cut down diagnosis times from minutes to under a second, and improved on the NHS’ 73% accuracy baseline to 95%.",
-    technologies: ["Docker", "Kubernetes", "Decision Trees", "Neural Networks", "Grafana", "Python", "Git"],
+    technologies: ["Docker", "Kubernetes", "Scikit-learn", "Decision Trees", "Neural Networks", "Grafana", "Python", "Git"],
     challenges: "Acute kidney injury (AKI) is associated with 100,000 deaths in emergency room patients a year. 30% of these deaths could be prevented with the right care and treatment. The NHS detects AKI cases manually using a flow chart which correctly detects 73% of cases.",
     github: "https://github.com/michaelhod/NHSAKI",
   }, {
@@ -67,7 +67,7 @@ const ProjectsCarousel = () => {
     date: "April 2025",
     oneLiner: "Generated high-resolution (HR) brain graphs from low-resolution (LR) brain graphs using generative graph neural networks.",
     description: "Since access to a high quality MRI machine is restricted for some, our team trained a generative GNN developing a graph super-resolution model to upscale low-resolution brain graphs into higher-resolution ones while preserving structural and functional properties. We implemented a modified version of Pragya Singh and Islem Rekik's STP-GSR model, adding intermediate steps in edge initialization and residual connections, providing stability and better generalization. Several innovations were tested, such as attention mechanisms and GANs, though not all improved results. The model demonstrated strong performance across most evaluation metrics, outperforming STP-GSR, though at higher computational cost.",
-    technologies: ["Scikit-learn", "Graph Super-Resolution", "Generative GNNs", "PyTorch", "Python", "Git"],
+    technologies: ["Graph Super-Resolution", "Generative GNNs", "PyTorch", "Python", "Git"],
     challenges: "MRI scans can vary in quality, depending on MRI machine. High resolution images of brain scans can only be taken with expensive and rare MRI machines.",
     github: "https://github.com/michaelhod/Generative-GNN-Brain-Graphs",
     demo: "https://arxiv.org/abs/2411.02525"
@@ -76,7 +76,7 @@ const ProjectsCarousel = () => {
     icon: Globe,
     title: "This webstie!",
     date: "September 2025",
-    oneLiner: "A personal home to showcase my projects and ideas.",
+    oneLiner: "A personal home to showcase some of the cool things I've done in life.",
     description: "I designed and built this website from scratch. I first prototyped a rough version using AI tooling (Lovable), then refined and polished it into a clean and responsive final product within a few days.",
     technologies: ["React", "Lovable", "Tailwind CSS"],
     challenges: "I wanted a dedicated space to share my projects and experiments in one place, rather than scattering them across different platforms.",
