@@ -33,7 +33,7 @@ const ProjectsCarousel = () => {
     title: "Flagging Acute Kidney Injury (AKI)",
     date: "April 2025",
     oneLiner: "Creating, integrating and maintaining an ML system to integrate into the NHS emergency room.",
-    description: "Our team built an end-to-end machine learning software system to reduce the strain on the ER and increase diagnosis accuracy. It was built to be plugged straight into an NHS hospital: including listening to live HL7 messages, AKI detection, and notifying positives to the hospital's paging system. It integrated with grafana to provide real-time insights through interactive dashboards. We cut down diagnosis times from minutes to under a second, and improved on the NHS’ 73% accuracy baseline to 95%.",
+    description: "Our team built an end-to-end machine learning software MVP to reduce the strain on the ER and increase diagnosis accuracy. It was built to be plugged straight into an NHS hospital: including listening to live HL7 messages, AKI detection, and notifying positives to the hospital's paging system. It integrated with grafana to provide real-time insights through interactive dashboards. We cut down diagnosis times from minutes to under a second, and improved on the NHS’ 73% accuracy baseline to 95%.",
     technologies: ["Docker", "Kubernetes", "Scikit-learn", "Decision Trees", "Neural Networks", "Grafana", "Python", "Git"],
     challenges: "Acute kidney injury (AKI) is associated with 100,000 deaths in emergency room patients a year. 30% of these deaths could be prevented with the right care and treatment. The NHS detects AKI cases manually using a flow chart which correctly detects 73% of cases.",
     github: "https://github.com/michaelhod/NHSAKI",
