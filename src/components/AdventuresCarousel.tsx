@@ -220,10 +220,6 @@ const AdventuresCarousel = () => {
                       </div>)}
                   </div>
 
-                  {/* Video */}
-                  <div className="rounded-lg overflow-hidden aspect-video">
-                    <iframe width="3840" height="2160" src={selectedAdventure.videoUrl} title={`${selectedAdventure.name} - Video`} frameBorder="0" className="w-full h-full" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
-                  </div>
                 </div>
               </div>
             </>}

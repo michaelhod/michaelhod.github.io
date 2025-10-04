@@ -39,16 +39,6 @@ const AboutSection = () => {
             </a>
             
             <a 
-              href="https://www.youtube.com/@monkee_m00" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="btn-social hover:bg-accent hover:text-accent-foreground"
-              aria-label="YouTube Channel"
-            >
-              <Youtube size={20} />
-            </a>
-            
-            <a 
               href="/MichaelHodginsCV.pdf" 
               target="_blank" 
               rel="noopener noreferrer"
