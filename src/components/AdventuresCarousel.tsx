@@ -24,6 +24,15 @@ const AdventuresCarousel = () => {
     images: taiwanImages
   }, {
     id: 2,
+    name: "Hiking",
+    description: "Hiking Throughout Mountain Peaks",
+    location: "Swiss Alps, Switzerland",
+    year: "2024",
+    image: switzerlandCover,
+    videoUrl: "https://youtube.com/embed/tiffsB6QSao?controls=1",
+    images: switzerlandImages
+  }, {
+    id: 3,
     name: "Sailing",
     description: "Sailing in the Turkish Riviera",
     location: "Mediterranean Sea, Turkiye",
@@ -31,15 +40,6 @@ const AdventuresCarousel = () => {
     image: turkiye8Cover,
     videoUrl: "https://youtube.com/embed/7BSKO2uSsgE?controls=1",
     images: turkiye8Images
-  }, {
-    id: 3,
-    name: "Hiking",
-    description: "Hiking Throughout Mountain Peaks",
-    location: "Swiss Alps, Switzerland",
-    year: "2023",
-    image: switzerlandCover,
-    videoUrl: "https://youtube.com/embed/tiffsB6QSao?controls=1",
-    images: switzerlandImages
   }, {
     id: 4,
     name: "Relaxing",
