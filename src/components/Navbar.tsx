@@ -64,12 +64,10 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border transition-all duration-500 transform ${
+    <nav className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 bg-background/80 backdrop-blur-md border border-border rounded-full px-10 py-2 transition-all duration-500 transform ${
       isVisible ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'
     }`}>
-      <div className="container mx-auto px-6 py-4">
-        <div className="flex items-center justify-center">
-          <div className="flex space-x-8">
+          <div className="flex items-center justify-center space-x-12">
             {navItems.map((item) => (
               <button
                 key={item.id}
@@ -82,8 +80,6 @@ const Navbar = () => {
               </button>
             ))}
           </div>
-        </div>
-      </div>
     </nav>
   );
 };
