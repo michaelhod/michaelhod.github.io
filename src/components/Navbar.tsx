@@ -69,7 +69,7 @@ const Navbar = () => {
     }`}>
       <div className="container">
         <div className="flex items-center justify-center">
-          <div className="flex rounded-full bg-background/80 backdrop-blur-md mx-auto border-b border-border px-4 py-2 space-x-6 md:space-x-12 sm:px-6">
+          <div className="flex rounded-full bg-background/80 backdrop-blur-md mx-auto border border-border px-4 py-2 space-x-6 md:space-x-12 sm:px-6">
             {navItems.map((item) => (
               <button
                 key={item.id}
