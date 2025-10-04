@@ -67,9 +67,9 @@ const Navbar = () => {
     <nav className={`fixed top-4 left-0 right-0 z-50 transition-all duration-500 transform ${
       isVisible ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'
     }`}>
-      <div className="container mx-auto">
+      <div className="container">
         <div className="flex items-center justify-center">
-          <div className="flex rounded-full bg-background/80 backdrop-blur-md border-b border-border px-6 py-2 space-x-12">
+          <div className="flex rounded-full bg-background/80 backdrop-blur-md mx-auto border-b border-border px-4 py-2 space-x-6 md:space-x-12 sm:px-6">
             {navItems.map((item) => (
               <button
                 key={item.id}
