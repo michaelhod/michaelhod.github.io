@@ -13,5 +13,3 @@ This project is built with:
 - React
 - shadcn-ui
 - Tailwind CSS
-
-Yes, you can configure a custom domain through your hosting provider's settings.
