@@ -24,7 +24,7 @@ const ProjectsCarousel = () => {
     title: "Info-Protect",
     date: "Present",
     oneLiner: "Founded a company using AI to take down content that infringes upon IP or hurts an individual's personal image.",
-    description: "Building an Agentic AI, SaaS hosted on GCP that allows both businesses and individuals to remove content and products online that infringes their IP or hurts their personal brand. This avoids the expensive and continuos process of our customers to scan the internet themselves, notify their (expensive) lawyer and ask them to take down this infringing activity. Through automated webscraping and identification of infringement with AI, this service automatically removes any damaging activity before it can meaningfully damage the company or personal brand.",
+    description: "Building an Agentic AI, SaaS hosted on GCP that allows both businesses and individuals to remove content and products online that infringes their IP or hurts their personal brand. This avoids the expensive and continuous process of our customers to scan the internet themselves, notify their (expensive) lawyer and ask them to take down this infringing activity. Through automated webscraping and identification of infringement with AI, this service automatically removes any damaging activity before it can meaningfully damage the company or personal brand.",
     technologies: ["Agentic AI", "GCP", "Cloud Computing", "Docker", "Image recognition", "SaaS"],
     challenges: "Companies need to remove products online that infringe their IP. Individuals need to remove content online that hurts their personal brand. This involves a lawyer, is an expensive process, and continuously occurs.",
     github: "https://github.com/Info-Protect"
