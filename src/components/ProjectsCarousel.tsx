@@ -6,17 +6,30 @@ import {
   Calendar, ExternalLink, Github, Brain, LineChart, Cpu,
   Activity, Share2, 
   Code2, Terminal, Wrench, Bot, Globe, Monitor,
-  Trees, TreePine, TreeDeciduous
+  Trees, TreePine, TreeDeciduous,
+  ShieldHalf
 } from "lucide-react";
 import iaeaIcon from "@/assets/IAEA.png";
 import imperialIcon from "@/assets/imperial.jpg";
 import e2vIcon from "@/assets/e2vLogo.webp";
+import mylogo from "@/assets/myLOGO.ico";
 const ProjectsCarousel = () => {
   const [selectedProject, setSelectedProject] = useState<any>(null);
   const [activeIndex, setActiveIndex] = useState(0);
   const scrollRef = useRef<HTMLDivElement>(null);
   const projects = [{
     id: 1,
+    icon: ShieldHalf,
+    affiliate: mylogo,
+    title: "Info-Protect",
+    date: "Present",
+    oneLiner: "Using ML to remove content that infringes upon personal and company IP.",
+    description: "Building SaaS hosted on GCP that allows both businesses and individuals to remove content and products online that infringes their IP or hurts their personal brand. This avoids the expensive and continuos process of our customers to scan the internet themselves, notify their (expensive) lawyer and ask them to take down this infringing activity. Through automated webscraping and identification of infringement with AI, this service automatically removes any damaging activity before it can meaningfully damage the company or personal brand.",
+    technologies: ["Agentic AI", "GCP", "Cloud Computing", "Docker", "Image recognition", "SaaS"],
+    challenges: "Companies need to remove products online that infringe their IP. Individuals need to remove content online that hurts their personal brand. This involves a lawyer, is an expensive process, and continuously occurs.",
+    github: "https://github.com/Info-Protect"
+  }, {
+    id: 2,
     icon: Share2,
     affiliate: iaeaIcon,
     title: "Dissertation - HTML Fact-Extraction",
@@ -27,7 +40,7 @@ const ProjectsCarousel = () => {
     challenges: "The IAEA needed a cheap way to extract facts from a large set of websites to create a fact database. ChatGPT was too expensive.",
     github: "https://github.com/michaelhod/IAEA-thesis"
   }, {
-    id: 2,
+    id: 3,
     icon: Activity,
     affiliate: imperialIcon,
     title: "Flagging Acute Kidney Injury (AKI)",
@@ -38,7 +51,7 @@ const ProjectsCarousel = () => {
     challenges: "Acute kidney injury (AKI) is associated with 100,000 deaths in emergency room patients a year. 30% of these deaths could be prevented with the right care and treatment. The NHS detects AKI cases manually using a flow chart which correctly detects 73% of cases.",
     github: "https://github.com/michaelhod/NHSAKI",
   }, {
-    id: 3,
+    id: 4,
     icon: Trees,
     affiliate: e2vIcon,
     title: "eco2Veritas",
@@ -49,7 +62,7 @@ const ProjectsCarousel = () => {
     challenges: "Organizations want to demonstrate genuine environmental responsibility to meet growing regulatory and consumer demands. eco₂Veritas helps organisations substantiate their sustainability claims with transparent, verifiable data.",
     demo: "https://www.eco2veritas.com/"
   }, {
-    id: 4,
+    id: 5,
     icon: Bot,
     affiliate: imperialIcon,
     title: "Robot Learning",
@@ -60,7 +73,7 @@ const ProjectsCarousel = () => {
     challenges: "A fun project to help a robot learn its surrounding and navigate quickly through a terrain varying in resistance to a finish line.",
     github: "https://github.com/michaelhod/Robot-Path-Learning"
   }, {
-    id: 5,
+    id: 6,
     icon: Brain,
     affiliate: imperialIcon,
     title: "Brain Graph Super-Resolution",
