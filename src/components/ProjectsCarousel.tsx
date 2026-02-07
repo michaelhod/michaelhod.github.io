@@ -24,7 +24,7 @@ const ProjectsCarousel = () => {
     title: "Info-Protect",
     date: "Present",
     oneLiner: "Founded a company using AI to take down content that infringes upon IP or hurts an individual's personal image.",
-    description: "Building an Agentic AI, SaaS hosted on GCP that allows both businesses and individuals to remove content and products online that infringes their IP or hurts their personal brand. This avoids the expensive and continuous process of our customers to scan the internet themselves, notify their (expensive) lawyer and ask them to take down this infringing activity. Through automated webscraping and identification of infringement with AI, this service automatically removes any damaging activity before it can meaningfully damage the company or personal brand.",
+    description: "Building an Agentic AI, SaaS hosted on GCP that allows both businesses and individuals to remove content and products online that infringes their IP or hurts their personal brand. This avoids the expensive and continuous process of our customers to scan the internet themselves, notify their (expensive) lawyer and ask them to take down this infringing activity. Through automated web scraping and identification of infringement with AI, this service automatically removes any damaging activity before it can meaningfully damage the company or personal brand.",
     technologies: ["Agentic AI", "GCP", "Cloud Computing", "Docker", "Image recognition", "SaaS"],
     challenges: "Companies need to remove products online that infringe their IP. Individuals need to remove content online that hurts their personal brand. This involves a lawyer, is an expensive process, and continuously occurs.",
     github: "https://github.com/Info-Protect"
@@ -46,7 +46,7 @@ const ProjectsCarousel = () => {
     title: "Flagging Acute Kidney Injury (AKI)",
     date: "April 2025",
     oneLiner: "Creating, integrating and maintaining an ML system to integrate into the NHS emergency room.",
-    description: "Our team built an end-to-end machine learning software MVP to reduce the strain on the ER and increase diagnosis accuracy. It was built to be plugged straight into an NHS hospital: including listening to live HL7 messages, AKI detection, and notifying positives to the hospital's paging system. It integrated with grafana to provide real-time insights through interactive dashboards. We cut down diagnosis times from minutes to under a second, and improved on the NHS’ 73% accuracy baseline to 95%.",
+    description: "Our team built an end-to-end machine learning software MVP to reduce the strain on the ER and increase diagnosis accuracy. It was built to be plugged straight into an NHS hospital: including listening to live HL7 messages, AKI detection, and notifying positives to the hospital's paging system. It integrated with Grafana to provide real-time insights through interactive dashboards. We cut down diagnosis times from minutes to under a second, and improved on the NHS’ 73% accuracy baseline to 95%.",
     technologies: ["Docker", "Kubernetes", "Scikit-learn", "Decision Trees", "Neural Networks", "Grafana", "Python", "Git"],
     challenges: "Acute kidney injury (AKI) is associated with 100,000 deaths in emergency room patients a year. 30% of these deaths could be prevented with the right care and treatment. The NHS detects AKI cases manually using a flow chart which correctly detects 73% of cases.",
     github: "https://github.com/michaelhod/NHSAKI",
