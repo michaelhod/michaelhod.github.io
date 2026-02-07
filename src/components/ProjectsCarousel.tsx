@@ -35,7 +35,7 @@ const ProjectsCarousel = () => {
     title: "Dissertation - HTML Fact-Extraction",
     date: "September 2025",
     oneLiner: "Using ML to help the IAEA with effective surveillance over nuclear material.",
-    description: "Developed a pipline that extracted facts from and HTML using a graph transformer, FLAN-T5 and traditional graph algorithms. The project involved researching state-of-the-art techniques, designing a novel architecture to improve upon them, and optimizing model performance through hyperparameter tuning. Outperformed state-of-the-art GraphScholarBERT by raising F1 score from 0.75 to 0.85. This pipeline takes approximately 1 minute 15 seconds to run and costs appropriately $0.002US per average news article.",
+    description: "Developed a pipline that extracted facts from HTML using a graph transformer, FLAN-T5 and traditional graph algorithms. The project involved researching state-of-the-art techniques, designing a novel architecture to improve upon them, and optimizing model performance through hyperparameter tuning. Outperformed state-of-the-art GraphScholarBERT by raising F1 score from 0.75 to 0.85. This pipeline takes approximately 1 minute 15 seconds to run and costs appropriately $0.002US per average news article.",
     technologies: ["PyTorch", "GNNs", "HuggingFace", "BERT", "Python", "Git"],
     challenges: "The IAEA needed a cheap way to extract facts from a large set of websites to create a fact database. ChatGPT was too expensive.",
     github: "https://github.com/michaelhod/IAEA-thesis"
